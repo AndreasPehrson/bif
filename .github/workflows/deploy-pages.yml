@@ -27,11 +27,8 @@ jobs:
 
       - run: npm ci
 
-      # Must be inline on the build step so Vite always sees VITE_BASE_PATH (public site URL path).
-      - name: Build
-        env:
-          VITE_BASE_PATH: ${{ github.event.repository.name == format('{0}.github.io', github.repository_owner) && '/' || format('/{0}/', github.event.repository.name) }}
-        run: npm run build
+      # `vite.config.js` sets `base` from `GITHUB_REPOSITORY` (always present in Actions) so asset URLs match /<repo>/ on Pages.
+      - run: npm run build
 
       - uses: actions/upload-pages-artifact@v3
         with:
