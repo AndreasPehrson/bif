@@ -3,7 +3,7 @@ const navItems = [
   { href: "#art", label: "Kunst" },
   { href: "#process", label: "Proces" },
   { href: "#poems", label: "Digte" },
-  { href: "#workshops", label: "Workshops" },
+  { href: "#stemning", label: "Stemning" },
   { href: "#contact", label: "Kontakt" }
 ];
 

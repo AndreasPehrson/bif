@@ -6,15 +6,15 @@ export function Hero() {
   return (
     <section className="hero section container">
       <div className="hero-copy">
-        <p className="eyebrow">Aarhus · Kunst / digte / workshopforløb</p>
+        <p className="eyebrow">Aarhus · Kunst / digte / samarbejder</p>
         <h1>
           Hos mig er der <strong>ingen</strong> der fejler.
           <br />
           Lad os sammen fejre, at kreativiteten altid sejrer.
         </h1>
         <p className="lead">
-          Jeg tilbyder workshops og forløb for skoler og organisationer - med
-          fokus på tryghed, leg og fællesskab i den kreative proces.
+          Jeg arbejder med maleri, tekst og fællesskab — i skole, organisation og
+          andre rum, hvor tryghed og leg må få plads i den kreative proces.
         </p>
         <div className="hero-contact" id="contact">
           <div className="hero-contact-inner">

@@ -7,7 +7,7 @@ import { Lightbox, LightboxImage } from "./components/Lightbox";
 import { Nav } from "./components/Nav";
 import { Poems } from "./components/Poems";
 import { Process, processLightboxImages } from "./components/Process";
-import { Workshops } from "./components/Workshops";
+import { Stemning } from "./components/Stemning";
 
 function App() {
   const combinedLightboxImages: LightboxImage[] = [
@@ -48,7 +48,7 @@ function App() {
           onOpenLightbox={(index) => openLightbox(artLightboxImages.length + index)}
         />
         <Poems />
-        <Workshops />
+        <Stemning />
       </main>
       <Footer />
       {activeImageIndex !== null ? (

@@ -16,7 +16,7 @@ export function About() {
             havde regnet med.»
           </p>
         </blockquote>
-        <figcaption>Tilbagemelding efter workshopforløb</figcaption>
+        <figcaption>Tilbagemelding fra samarbejde</figcaption>
       </figure>
     </section>
   );
