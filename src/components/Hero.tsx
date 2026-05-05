@@ -1,3 +1,4 @@
+import { assetUrl } from "../assetUrl";
 import { ContactForm } from "./ContactForm";
 import { PublicPictureImg } from "./PublicPictureImg";
 
@@ -36,7 +37,7 @@ export function Hero() {
         <div className="hero-photo-backdrop" aria-hidden="true" />
         <PublicPictureImg
           className="hero-photo"
-          src="/images/steffen-studio.jpg"
+          src={assetUrl("/images/steffen-studio.jpg")}
           alt="Jeg med malerier foran studiefacade"
           width={1536}
           height={2048}

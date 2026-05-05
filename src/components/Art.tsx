@@ -1,8 +1,9 @@
+import { assetUrl } from "../assetUrl";
 import { LightboxImage } from "./Lightbox";
 import { PublicPictureImg } from "./PublicPictureImg";
 
 const featuredWork = {
-  src: "/images/steffen-studio.jpg",
+  src: assetUrl("/images/steffen-studio.jpg"),
   alt: "Jeg i gårdrum med tre malerier i stærke farver",
   title: "Tre lærreder i gården",
   meta: "2024 · Maleri · blandet teknik"
@@ -10,13 +11,13 @@ const featuredWork = {
 
 const works = [
   {
-    src: "/images/steffen-studio-rope-art.jpg",
+    src: assetUrl("/images/steffen-studio-rope-art.jpg"),
     alt: "Jeg holder mørkerødt lærred med figur lavet af reb",
     title: "Rebfigur på bordeaux bund",
     meta: "2024 · Lærred · reb og spray"
   },
   {
-    src: "/images/steffen-portrait-suit.jpg",
+    src: assetUrl("/images/steffen-portrait-suit.jpg"),
     alt: "Jeg i turkis jakkesæt foran stenmur med armene slået ud",
     title: "Portræt ved stenmuren",
     meta: "2023 · Foto · portræt"
@@ -25,49 +26,49 @@ const works = [
 
 const extraArtWorks = [
   {
-    src: "/images/steffen-gallery-01.jpg",
+    src: assetUrl("/images/steffen-gallery-01.jpg"),
     alt: "Spraydåser, olietuber og pensler lagt klar på stol i atelier",
     title: "Materialer før opstart",
     meta: "2024 · Foto · atelier"
   },
   {
-    src: "/images/steffen-gallery-02.jpg",
+    src: assetUrl("/images/steffen-gallery-02.jpg"),
     alt: "Maleri med to figurer på staffeli midt i brostensgård",
     title: "To figurer i gårdrummet",
     meta: "2024 · Maleri · figurmotiv"
   },
   {
-    src: "/images/steffen-gallery-03.jpg",
+    src: assetUrl("/images/steffen-gallery-03.jpg"),
     alt: "Pink lærred med to små figurmotiver foran murstensvæg",
     title: "Pink felt med to figurer",
     meta: "2024 · Maleri · akryl og spray"
   },
   {
-    src: "/images/steffen-gallery-04.jpg",
+    src: assetUrl("/images/steffen-gallery-04.jpg"),
     alt: "Arbejdsbord med spraytest og lærred med håndmotiv i baggrunden",
     title: "Spraytest ved håndmotiv",
     meta: "2024 · Foto · proces"
   },
   {
-    src: "/images/steffen-gallery-05.jpg",
+    src: assetUrl("/images/steffen-gallery-05.jpg"),
     alt: "Lærred med teksten Velkommen til bryllupsfest og rød snorform",
     title: "Velkommen til bryllupsfest",
     meta: "2024 · Maleri · tekst og snor"
   },
   {
-    src: "/images/steffen-gallery-06.jpg",
+    src: assetUrl("/images/steffen-gallery-06.jpg"),
     alt: "Lyst lærred med ordet ALIVE og malet blomst med dryp",
     title: "ALIVE med blomst",
     meta: "2024 · Maleri · tekstværk"
   },
   {
-    src: "/images/steffen-gallery-07.jpg",
+    src: assetUrl("/images/steffen-gallery-07.jpg"),
     alt: "Atelierrum fyldt med værker, skitser og materialer på vægge og gulv",
     title: "Atelieret i fuld opstilling",
     meta: "2024 · Foto · atelier"
   },
   {
-    src: "/images/steffen-gallery-08.jpg",
+    src: assetUrl("/images/steffen-gallery-08.jpg"),
     alt: "Jeg læser op ved mikrofon foran bogreol og publikum",
     title: "Oplæsning i bogcafe",
     meta: "2024 · Foto · oplæsning"
