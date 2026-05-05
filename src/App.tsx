@@ -7,6 +7,7 @@ import { Lightbox, LightboxImage } from "./components/Lightbox";
 import { Nav } from "./components/Nav";
 import { Poems } from "./components/Poems";
 import { Process, processLightboxImages } from "./components/Process";
+import { GoogleAnalytics } from "./components/GoogleAnalytics";
 import { Stemning } from "./components/Stemning";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
   return (
     <div className="app-shell" id="top">
       <Nav />
+      <GoogleAnalytics />
       <main>
         <Hero />
         <About />
