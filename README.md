@@ -16,10 +16,19 @@ Single-page portfolio site focused on promoting workshops, with sections for art
    - `npm run dev`
 3. Open the local URL shown by Vite.
 
+After adding or replacing JPEGs in `public/images/`, run `npm run optimize-images` to regenerate matching `.webp` files (used by the site for faster loads).
+
 ## Photos used
 
 - `public/images/steffen-studio.jpg` (hero + featured art tile)
 - `public/images/steffen-street.jpg` (workshops section backdrop)
+- Additional process/art images are also stored in `public/images/`
+
+## Project structure
+
+- `src/` - React components and styling
+- `public/images/` - all site image assets served by Vite
+- `dist/` - production build output (generated)
 
 ## Content placeholders to replace
 
@@ -32,4 +41,4 @@ Single-page portfolio site focused on promoting workshops, with sections for art
 
 ## Contact form integration
 
-The current form uses a placeholder submit handler (`preventDefault`, console log, success message). Replace it with Formspree/Web3Forms/custom endpoint in `src/components/Contact.tsx`.
+The contact form is wired to Formspree via `@formspree/react` in `src/components/Contact.tsx`.

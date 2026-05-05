@@ -1,6 +1,5 @@
 const navItems = [
   { href: "#about", label: "Om" },
-  { href: "#orgs", label: "Skoler" },
   { href: "#art", label: "Kunst" },
   { href: "#process", label: "Proces" },
   { href: "#poems", label: "Digte" },

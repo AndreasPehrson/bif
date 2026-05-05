@@ -1,16 +1,16 @@
 export function Poems() {
   return (
-    <section className="section container" id="poems">
+    <section className="section section-tight container" id="poems">
       <h2>Digte</h2>
       <p className="section-intro">
-        Korte uddrag og oplæste fragmenter (fx spoken word).
+        Korte uddrag og oplæste fragmenter fra min scene og skitsebog.
       </p>
       <div className="poems-grid">
         <blockquote>
-          <p>"Pladsholder-vers 1. Hold det kort og stemningsfuldt."</p>
+          <p>"Vi bar farverne ind i rummet, og rummet svarede igen."</p>
         </blockquote>
         <blockquote>
-          <p>"Pladsholder-vers 2. En linje med varme og bevægelse."</p>
+          <p>"Når stemmen tør stå stille, begynder linjen at bevæge sig."</p>
         </blockquote>
       </div>
     </section>

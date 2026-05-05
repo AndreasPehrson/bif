@@ -1,37 +1,46 @@
+import { ContactForm } from "./ContactForm";
+import { PublicPictureImg } from "./PublicPictureImg";
+
 export function Hero() {
   return (
     <section className="hero section container">
-      <div>
-        <p className="eyebrow">København · Kunst / digte / workshopforløb</p>
+      <div className="hero-copy">
+        <p className="eyebrow">Aarhus · Kunst / digte / workshopforløb</p>
         <h1>
           Hos mig er der <strong>ingen</strong> der fejler.
           <br />
           Lad os sammen fejre, at kreativiteten altid sejrer.
         </h1>
         <p className="lead">
-          Workshops og forløb for skoler og organisationer — med fokus på
-          tryghed, leg og fællesskab i den kreative proces.
+          Jeg tilbyder workshops og forløb for skoler og organisationer - med
+          fokus på tryghed, leg og fællesskab i den kreative proces.
         </p>
-        <div className="org-strip" id="orgs">
-          <p className="org-strip-title">For skoler og organisationer</p>
-          <ul className="org-bullets">
-            <li>Klar struktur, tryg ramme og hands-on øvelser</li>
-            <li>Tilpasses målgruppe, tid og lokation</li>
-            <li>Forespørgsel og planlægning via e-mail</li>
-          </ul>
-        </div>
-        <div className="hero-cta">
-          <a href="#contact" className="btn btn-primary">
-            Kontakt mig
-          </a>
+        <div className="hero-contact" id="contact">
+          <div className="hero-contact-inner">
+            <header className="hero-contact-header">
+              <p className="hero-contact-kicker">Kontakt</p>
+              <h2 className="hero-contact-title">Skriv til mig</h2>
+              <p className="hero-contact-intro">
+                Skriv en besked, så vender jeg tilbage på e-mail.
+              </p>
+            </header>
+            <ContactForm
+              className="contact-form contact-form--hero"
+              messageRows={4}
+              variant="hero"
+            />
+          </div>
         </div>
       </div>
       <div className="hero-artwrap">
         <div className="hero-photo-backdrop" aria-hidden="true" />
-        <img
+        <PublicPictureImg
           className="hero-photo"
           src="/images/steffen-studio.jpg"
-          alt="Steffen Mark Hansen med malerier foran studiefacade"
+          alt="Jeg med malerier foran studiefacade"
+          width={1536}
+          height={2048}
+          fetchPriority="high"
         />
       </div>
     </section>
