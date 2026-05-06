@@ -1,6 +1,9 @@
 /**
- * Builds a .webp next to each JPEG in public/images/
- * Only writes WebP when it is smaller than the source JPEG (same basename).
+ * Builds selected `.webp` derivatives in `public/images/`.
+ *
+ * Note: the React components intentionally use JPEG `<img src=...>` for predictable
+ * layout on GitHub Pages. We only generate WebP for assets that are referenced
+ * from CSS as `image-set(...)` fallbacks (see `src/index.css`).
  */
 
 import { readdir, stat, writeFile, unlink } from "node:fs/promises";
@@ -10,6 +13,9 @@ import sharp from "sharp";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const imagesDir = join(__dirname, "..", "public", "images");
+
+/** Only these JPEGs get a sibling `.webp` (keep repo lean). */
+const WEBP_TARGETS = new Set(["steffen-street.jpg"]);
 
 /** Longest edge caps; first match wins with the highest usable quality at that cap. */
 const CAPS_PX = [
@@ -44,7 +50,10 @@ async function writeSmallerWebp(inputPath, outputPath) {
 }
 
 const entries = await readdir(imagesDir, { withFileTypes: true });
-const jpegs = entries.filter((e) => e.isFile() && /\.jpe?g$/i.test(e.name)).map((e) => e.name);
+const jpegs = entries
+  .filter((e) => e.isFile() && /\.jpe?g$/i.test(e.name))
+  .map((e) => e.name)
+  .filter((name) => WEBP_TARGETS.has(name));
 
 let skipped = 0;
 for (const name of jpegs) {

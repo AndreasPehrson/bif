@@ -1,6 +1,6 @@
 # Steffen Mark Hansen One-Pager
 
-Single-page portfolio site focused on promoting workshops, with sections for art, poems, and a contact form.
+Single-page site for Steffen Mark Hansen: art gallery, process, poems, a mood section, and a contact form anchored in the hero.
 
 ## Stack
 
@@ -16,13 +16,14 @@ Single-page portfolio site focused on promoting workshops, with sections for art
    - `npm run dev`
 3. Open the local URL shown by Vite.
 
-After adding or replacing JPEGs in `public/images/`, run `npm run optimize-images` to regenerate matching `.webp` files (used by the site for faster loads).
+After replacing `public/images/steffen-street.jpg`, run `npm run optimize-images` to regenerate `public/images/steffen-street.webp` (used by the CSS background `image-set(...)` for faster loads). Other images are served as JPEG from `<img>` tags.
 
 ## Photos used
 
 - `public/images/steffen-studio.jpg` (hero + featured art tile)
-- `public/images/steffen-street.jpg` (workshops section backdrop)
-- Additional process/art images are also stored in `public/images/`
+- `public/images/steffen-street.jpg` + `public/images/steffen-street.webp` (full-bleed mood backdrop)
+- `public/images/steffen-gallery-*.jpg` (gallery grid)
+- `public/images/process-*.jpg` (process section)
 
 ## Project structure
 
@@ -36,9 +37,9 @@ After adding or replacing JPEGs in `public/images/`, run `npm run optimize-image
 - About paragraph
 - Art captions / additional images
 - Poem excerpts
-- Workshop offering copy
-- Footer social links and email
+- Stemning section copy
+- Footer social links (Instagram URL)
 
 ## Contact form integration
 
-The contact form is wired to Formspree via `@formspree/react` in `src/components/Contact.tsx`.
+The contact form is wired to Formspree via `@formspree/react` in `src/components/ContactForm.tsx` (embedded in `src/components/Hero.tsx`).

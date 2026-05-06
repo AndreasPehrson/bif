@@ -9,8 +9,10 @@ type PublicPictureImgProps = Omit<
 };
 
 /**
- * Single <img> for predictable layout (no <picture> / missing .webp on host issues).
- * Run `npm run optimize-images` to shrink JPEGs in place when you add new photos.
+ * Single <img> for predictable layout on GitHub Pages (simple `src=` paths).
+ *
+ * Note: `npm run optimize-images` only generates `.webp` for CSS `image-set(...)`
+ * backgrounds (see `src/index.css`), not for these `<img>` tags.
  */
 export function PublicPictureImg({
   src,
