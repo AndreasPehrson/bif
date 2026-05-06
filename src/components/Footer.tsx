@@ -8,10 +8,7 @@ export function Footer() {
           Maleri, tekst og fællesskab i Aarhus - med plads til leg og tryghed.
         </p>
         <nav className="footer-links" aria-label="Footer">
-          <a
-            href="mailto:kontakt@example.com?subject=Foresp%C3%B8rgsel%20-%20Steffen%20Mark%20Hansen"
-            className="footer-link"
-          >
+          <a href="#kontakt" className="footer-link">
             E-mail
           </a>
           <a

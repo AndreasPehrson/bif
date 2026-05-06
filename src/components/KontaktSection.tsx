@@ -16,16 +16,11 @@ export function KontaktSection() {
           aria-label="Praktisk om henvendelser og svartid"
         >
           <p>
-            <strong>Steffen Mark Hansen</strong> - det er mig, der læser og svarer, når du skriver
-            her. Ingen mellemled.
+            <strong>Steffen Mark Hansen</strong> - det er mig, der læser og svarer, når du skriver.
           </p>
           <p>
-            Skriv gerne, også med en løs idé eller et enkelt spørgsmål. Vi kan tage den
-            uforpligtende først.
-          </p>
-          <p>
-            Jeg svarer som regel inden for et par hverdage på mail. Hjemmebase er Aarhus -
-            samarbejder gerne landet rundt.
+            Skriv gerne, også med en løs idé eller et enkelt spørgsmål. Jeg svarer som regel inden
+            for et par hverdage på mail.
           </p>
         </div>
         <div className="contact-panel">
