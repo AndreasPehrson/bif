@@ -1,12 +1,12 @@
 # Steffen Mark Hansen One-Pager
 
-Single-page site for Steffen Mark Hansen: art gallery, process, poems, a mood section, and a contact form anchored in the hero.
+Single-page editorial site: split hero (photo + intro, CTA to `#kontakt`), dedicated kontakt section with form, Kunst gallery (including proces photos), Digte, and footer. Formspree lives in `ContactForm`, rendered from `KontaktSection`.
 
 ## Stack
 
 - Vite + React + TypeScript
 - Tailwind CSS v4 (via `@tailwindcss/vite`)
-- Custom warm visual theme in `src/index.css`
+- Editorial theme in `src/index.css`
 
 ## Run locally
 
@@ -16,30 +16,29 @@ Single-page site for Steffen Mark Hansen: art gallery, process, poems, a mood se
    - `npm run dev`
 3. Open the local URL shown by Vite.
 
-After replacing `public/images/steffen-street.jpg`, run `npm run optimize-images` to regenerate `public/images/steffen-street.webp` (used by the CSS background `image-set(...)` for faster loads). Other images are served as JPEG from `<img>` tags.
+Production build runs `scripts/optimize-images.mjs` first: it writes responsive WebP variants under `public/images/r/` and refreshes `src/imageManifest.generated.json` for `<img srcset>` (see `PublicPictureImg`). JPEG files remain the fallback `src`.
 
 ## Photos used
 
-- `public/images/steffen-studio.jpg` (hero + featured art tile)
-- `public/images/steffen-street.jpg` + `public/images/steffen-street.webp` (full-bleed mood backdrop)
-- `public/images/steffen-gallery-*.jpg` (gallery grid)
-- `public/images/process-*.jpg` (process section)
+- `public/images/steffen-studio.jpg` (hero + Kunst spotlight)
+- `public/images/steffen-studio-rope-art.jpg`, `steffen-portrait-suit.jpg` (Kunst pair)
+- `public/images/steffen-gallery-*.jpg` and `public/images/process-*.jpg` (Kunst grid / lightbox)
 
 ## Project structure
 
 - `src/` - React components and styling
-- `public/images/` - all site image assets served by Vite
+- `public/images/` - image assets
 - `dist/` - production build output (generated)
 
 ## Content placeholders to replace
 
-- Hero intro text
-- About paragraph
-- Art captions / additional images
-- Poem excerpts
-- Stemning section copy
-- Footer social links (Instagram URL)
+- Footer mailto (`kontakt@example.com` - replace with the real address)
+- Poem excerpts / Kunst captions as needed
 
 ## Contact form integration
 
-The contact form is wired to Formspree via `@formspree/react` in `src/components/ContactForm.tsx` (embedded in `src/components/Hero.tsx`).
+Formspree via `@formspree/react` in `src/components/ContactForm.tsx`, rendered from `src/components/KontaktSection.tsx` (form id `xjglrkoo`).
+
+## Analytics
+
+Optional GA4: set `VITE_GA_MEASUREMENT_ID` (e.g. `G-XXXXXXXXXX`) in `.env.local`; see `src/components/GoogleAnalytics.tsx`.

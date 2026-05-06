@@ -1,15 +1,23 @@
+import { useState } from "react";
 import { assetUrl } from "../assetUrl";
-import { LightboxImage } from "./Lightbox";
+import type { LightboxImage } from "./Lightbox";
 import { PublicPictureImg } from "./PublicPictureImg";
 
-const featuredWork = {
+type GalleryItem = {
+  src: string;
+  alt: string;
+  title: string;
+  meta: string;
+};
+
+const featuredWork: GalleryItem = {
   src: assetUrl("/images/steffen-studio.jpg"),
   alt: "Jeg i gårdrum med tre malerier i stærke farver",
   title: "Tre lærreder i gården",
   meta: "2024 · Maleri · blandet teknik"
 };
 
-const works = [
+const works: GalleryItem[] = [
   {
     src: assetUrl("/images/steffen-studio-rope-art.jpg"),
     alt: "Jeg holder mørkerødt lærred med figur lavet af reb",
@@ -24,7 +32,7 @@ const works = [
   }
 ];
 
-const extraArtWorks = [
+const extraArtWorks: GalleryItem[] = [
   {
     src: assetUrl("/images/steffen-gallery-01.jpg"),
     alt: "Spraydåser, olietuber og pensler lagt klar på stol i atelier",
@@ -75,9 +83,97 @@ const extraArtWorks = [
   }
 ];
 
-const allArtWorks = [...works, ...extraArtWorks];
+/** Former standalone Proces section - merged into Kunst grid + lightbox */
+const processWorks: GalleryItem[] = [
+  {
+    src: assetUrl("/images/process-outdoor-table.jpg"),
+    alt: "Udendørs arbejdsbord med maleri og materialer",
+    title: "Udendørs maleri på picnicbord",
+    meta: "Proces · foto"
+  },
+  {
+    src: assetUrl("/images/process-courtyard-spray.jpg"),
+    alt: "Spraymaling og studiofacade med teksten KUNST",
+    title: "Spray og stemning på væggen",
+    meta: "Proces · dokumentation"
+  },
+  {
+    src: assetUrl("/images/process-pink-canvas.jpg"),
+    alt: "Pink og neongrønt lærred i arbejde",
+    title: "Farve, form og nærvær",
+    meta: "Proces · maleri"
+  },
+  {
+    src: assetUrl("/images/process-hand-canvas.jpg"),
+    alt: "Spraytest på mørkt lærred med håndmotiv",
+    title: "Materiale og tilfældighed",
+    meta: "Proces · spray"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-09.jpg"),
+    alt: "Publikum i cafe under oplæsning eller præsentation",
+    title: "Oplæsning i cafe-rum",
+    meta: "Proces · foto"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-10.jpg"),
+    alt: "Vernissage i vinbutik med værker på væggen",
+    title: "Vernissage i vinbutik",
+    meta: "Proces · foto"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-11.jpg"),
+    alt: "Maleri på staffeli med to figur-silhuetter i gennemgang",
+    title: "Figurer på staffeli",
+    meta: "Proces · maleri"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-12.jpg"),
+    alt: "Rødt maleri på staffeli med sorte stregformer i atelier",
+    title: "Rødt lærred i atelier",
+    meta: "Proces · maleri"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-13.jpg"),
+    alt: "Orange maleri med dryp hængt op mod murstensvæg",
+    title: "Orange dryp mod mur",
+    meta: "Proces · maleri"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-14.jpg"),
+    alt: "Spraydåse i forgrunden og snore i gårdrum ved atelier",
+    title: "Spray og snore i gården",
+    meta: "Proces · foto"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-15.jpg"),
+    alt: "Mørkt lærred med snore og røde trekantformer",
+    title: "Snoreværk på mørk bund",
+    meta: "Proces · maleri"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-16.jpg"),
+    alt: "Udendørs arbejdsbord med lærred, maling og skygger",
+    title: "Udendørs arbejdsbord",
+    meta: "Proces · foto"
+  },
+  {
+    src: assetUrl("/images/steffen-gallery-17.jpg"),
+    alt: "Publikum til fernisering i vinbutik med værker på væggen",
+    title: "Fernisering med publikum",
+    meta: "Proces · foto"
+  }
+];
 
-export const artLightboxImages: LightboxImage[] = [featuredWork, ...allArtWorks].map((item) => ({
+const mergedGridExtras: GalleryItem[] = [...extraArtWorks, ...processWorks];
+
+const allGalleryForLightbox: GalleryItem[] = [
+  featuredWork,
+  ...works,
+  ...mergedGridExtras
+];
+
+export const artLightboxImages: LightboxImage[] = allGalleryForLightbox.map((item) => ({
   src: item.src,
   alt: item.alt,
   caption: `${item.title} · ${item.meta}`
@@ -87,52 +183,121 @@ type ArtProps = {
   onOpenLightbox: (index: number) => void;
 };
 
-export function Art({ onOpenLightbox }: ArtProps) {
+function Caption({ title, meta }: { title: string; meta: string }) {
   return (
-    <section className="section container" id="art">
-      <h2>Kunst</h2>
-      <p className="section-intro">
-        Mine udvalgte værker og portrætter - korte linjer, klar stemning.
-      </p>
-      <div className="art-grid">
-        <article className="art-feature">
-          <button
-            type="button"
-            className="image-button"
-            onClick={() => onOpenLightbox(0)}
-            aria-label={`Åbn billede: ${featuredWork.title}`}
-          >
-            <PublicPictureImg
-              src={featuredWork.src}
-              alt={featuredWork.alt}
-              loading="lazy"
-            />
-          </button>
-          <div className="work-meta">
-            <p className="work-title">{featuredWork.title}</p>
-            <p className="work-details">{featuredWork.meta}</p>
-          </div>
-        </article>
-        {allArtWorks.map((item, index) => (
-          <article key={item.src} className="work-card">
+    <div className="caption">
+      <span className="caption-line caption-line--title">{title}</span>
+      <span className="caption-line">{meta}</span>
+    </div>
+  );
+}
+
+export function Art({ onOpenLightbox }: ArtProps) {
+  const [showMore, setShowMore] = useState(false);
+  const initialExtraCount = 6;
+  const visibleExtras = showMore
+    ? mergedGridExtras
+    : mergedGridExtras.slice(0, initialExtraCount);
+
+  const extrasStartIndex = 1 + works.length;
+
+  return (
+    <section
+      className="section art-section"
+      id="kunst"
+      aria-labelledby="kunst-heading"
+    >
+      <div className="container art-inner">
+        <header className="art-header">
+          <h2 id="kunst-heading" className="section-heading">
+            Kunst
+          </h2>
+          <p className="section-intro art-intro">
+            Mine udvalgte værker og portrætter - og glimt fra proces og rum omkring dem.
+          </p>
+        </header>
+
+        <div className="art-layout">
+          <article className="art-spotlight">
             <button
               type="button"
               className="image-button"
-              onClick={() => onOpenLightbox(index + 1)}
-              aria-label={`Åbn billede: ${item.title}`}
+              onClick={() => onOpenLightbox(0)}
+              aria-label={`Åbn billede: ${featuredWork.title}`}
             >
-              <PublicPictureImg
-                src={item.src}
-                alt={item.alt}
-                loading="lazy"
-              />
+              <div className="editorial-frame editorial-frame--spotlight">
+                <PublicPictureImg
+                  src={featuredWork.src}
+                  alt={featuredWork.alt}
+                  layout="artHero"
+                  loading="lazy"
+                />
+              </div>
             </button>
-            <div className="work-meta">
-              <p className="work-title">{item.title}</p>
-              <p className="work-details">{item.meta}</p>
-            </div>
+            <Caption title={featuredWork.title} meta={featuredWork.meta} />
           </article>
-        ))}
+
+          <div className="art-pair">
+            {works.map((item, index) => (
+              <article key={item.src} className="editorial-grid-item">
+                <button
+                  type="button"
+                  className="image-button"
+                  onClick={() => onOpenLightbox(index + 1)}
+                  aria-label={`Åbn billede: ${item.title}`}
+                >
+                  <div className="editorial-frame editorial-frame--pair">
+                    <PublicPictureImg
+                      src={item.src}
+                      alt={item.alt}
+                      layout="pair"
+                      loading="lazy"
+                    />
+                  </div>
+                </button>
+                <Caption title={item.title} meta={item.meta} />
+              </article>
+            ))}
+          </div>
+
+          <div className="editorial-grid">
+            {visibleExtras.map((item, index) => {
+              const lightboxIndex = extrasStartIndex + index;
+              return (
+                <article key={item.src} className="editorial-grid-item">
+                  <button
+                    type="button"
+                    className="image-button"
+                    onClick={() => onOpenLightbox(lightboxIndex)}
+                    aria-label={`Åbn billede: ${item.title}`}
+                  >
+                    <div className="editorial-frame editorial-frame--tile">
+                      <PublicPictureImg
+                        src={item.src}
+                        alt={item.alt}
+                        layout="tile"
+                        loading="lazy"
+                      />
+                    </div>
+                  </button>
+                  <Caption title={item.title} meta={item.meta} />
+                </article>
+              );
+            })}
+          </div>
+
+          {mergedGridExtras.length > initialExtraCount ? (
+            <div className="art-more">
+              <button
+                type="button"
+                className="btn-text"
+                onClick={() => setShowMore((value) => !value)}
+              >
+                {showMore ? "Vis færre billeder" : "Vis flere billeder"}
+              </button>
+            </div>
+          ) : null}
+        </div>
       </div>
     </section>
   );

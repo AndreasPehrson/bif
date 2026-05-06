@@ -1,20 +1,14 @@
 import { useState } from "react";
-import { About } from "./components/About";
 import { Art, artLightboxImages } from "./components/Art";
 import { Footer } from "./components/Footer";
 import { Hero } from "./components/Hero";
-import { Lightbox, LightboxImage } from "./components/Lightbox";
+import { KontaktSection } from "./components/KontaktSection";
+import { Lightbox } from "./components/Lightbox";
 import { Nav } from "./components/Nav";
 import { Poems } from "./components/Poems";
-import { Process, processLightboxImages } from "./components/Process";
 import { GoogleAnalytics } from "./components/GoogleAnalytics";
-import { Stemning } from "./components/Stemning";
 
 function App() {
-  const combinedLightboxImages: LightboxImage[] = [
-    ...artLightboxImages,
-    ...processLightboxImages
-  ];
   const [activeImageIndex, setActiveImageIndex] = useState<number | null>(null);
 
   function openLightbox(index: number) {
@@ -27,35 +21,33 @@ function App() {
 
   function showNextImage() {
     if (activeImageIndex === null) return;
-    setActiveImageIndex((activeImageIndex + 1) % combinedLightboxImages.length);
+    setActiveImageIndex((activeImageIndex + 1) % artLightboxImages.length);
   }
 
   function showPreviousImage() {
     if (activeImageIndex === null) return;
     setActiveImageIndex(
-      (activeImageIndex - 1 + combinedLightboxImages.length) %
-        combinedLightboxImages.length
+      (activeImageIndex - 1 + artLightboxImages.length) % artLightboxImages.length
     );
   }
 
   return (
     <div className="app-shell" id="top">
+      <a href="#main-content" className="skip-link">
+        Spring til indhold
+      </a>
       <Nav />
       <GoogleAnalytics />
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <Hero />
-        <About />
+        <KontaktSection />
         <Art onOpenLightbox={(index) => openLightbox(index)} />
-        <Process
-          onOpenLightbox={(index) => openLightbox(artLightboxImages.length + index)}
-        />
         <Poems />
-        <Stemning />
       </main>
       <Footer />
       {activeImageIndex !== null ? (
         <Lightbox
-          images={combinedLightboxImages}
+          images={artLightboxImages}
           activeIndex={activeImageIndex}
           onClose={closeLightbox}
           onNext={showNextImage}

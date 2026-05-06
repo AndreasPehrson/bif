@@ -1,48 +1,44 @@
 import { assetUrl } from "../assetUrl";
-import { ContactForm } from "./ContactForm";
 import { PublicPictureImg } from "./PublicPictureImg";
 
 export function Hero() {
   return (
-    <section className="hero section container">
-      <div className="hero-copy">
-        <p className="eyebrow">Aarhus · Kunst / digte / samarbejder</p>
-        <h1>
-          Hos mig er der <strong>ingen</strong> der fejler.
-          <br />
-          Lad os sammen fejre, at kreativiteten altid sejrer.
-        </h1>
-        <p className="lead">
-          Jeg arbejder med maleri, tekst og fællesskab — i skole, organisation og
-          andre rum, hvor tryghed og leg må få plads i den kreative proces.
-        </p>
-        <div className="hero-contact" id="contact">
-          <div className="hero-contact-inner">
-            <header className="hero-contact-header">
-              <p className="hero-contact-kicker">Kontakt</p>
-              <h2 className="hero-contact-title">Skriv til mig</h2>
-              <p className="hero-contact-intro">
-                Skriv en besked, så vender jeg tilbage på e-mail.
-              </p>
-            </header>
-            <ContactForm
-              className="contact-form contact-form--hero"
-              messageRows={4}
-              variant="hero"
-            />
+    <section className="top-split-section" aria-labelledby="hero-heading">
+      <div className="container">
+        <div className="hero-split-grid">
+          <div className="hero-split-media">
+            <div className="hero-split-tilt">
+              <div className="editorial-frame editorial-frame--hero-split">
+                <PublicPictureImg
+                  src={assetUrl("/images/steffen-street.jpg")}
+                  alt="Steffen i port med malerier foran murstensfacade i sollys"
+                  width={1536}
+                  height={2048}
+                  layout="heroColumn"
+                  fetchPriority="high"
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="hero-split-content">
+            <h1 id="hero-heading" className="display-hero">
+              Hos mig er der <strong>ingen</strong> der fejler.
+              <br />
+              Lad os sammen fejre, at kreativiteten altid sejrer.
+            </h1>
+            <p className="lead-editorial">
+              Jeg arbejder med maleri, tekst og fællesskab - i rum, hvor tryghed og leg må få
+              plads i den kreative proces.
+            </p>
+            <p className="hero-cta">
+              <a href="#kontakt" className="link-quiet hero-cta-link">
+                Skriv til mig<span className="visually-hidden"> (spring til kontakt)</span>
+              </a>
+            </p>
           </div>
         </div>
-      </div>
-      <div className="hero-artwrap">
-        <div className="hero-photo-backdrop" aria-hidden="true" />
-        <PublicPictureImg
-          className="hero-photo"
-          src={assetUrl("/images/steffen-studio.jpg")}
-          alt="Jeg med malerier foran studiefacade"
-          width={1536}
-          height={2048}
-          fetchPriority="high"
-        />
       </div>
     </section>
   );

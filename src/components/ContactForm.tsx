@@ -6,108 +6,80 @@ type ContactFields = {
   message: string;
 };
 
-type ContactFormProps = {
-  className?: string;
-  messageRows?: number;
-  variant?: "default" | "hero";
-};
-
-export function ContactForm({
-  className = "contact-form",
-  messageRows = 5,
-  variant = "default"
-}: ContactFormProps) {
+export function ContactForm() {
   const [state, handleSubmit] = useForm<ContactFields>("xjglrkoo");
 
   if (state.succeeded) {
     return (
       <div className="form-alert form-alert-success" role="status">
         <p className="success-msg">
-          Tak - beskeden er sendt. Jeg vender typisk tilbage på e-mail inden for
-          et par hverdage.
+          Tak - beskeden er landet hos mig. Jeg glæder mig til at læse den og vender tilbage på
+          e-mail inden for et par hverdage.
         </p>
       </div>
     );
   }
 
-  const nameField = (
-    <label>
-      Navn
-      <input
-        name="name"
-        required
-        autoComplete="name"
-        disabled={state.submitting}
-      />
-      <ValidationError
-        className="form-error"
-        prefix="Navn"
-        field="name"
-        errors={state.errors}
-      />
-    </label>
-  );
-
-  const emailField = (
-    <label>
-      E-mail
-      <input
-        type="email"
-        name="email"
-        required
-        autoComplete="email"
-        disabled={state.submitting}
-      />
-      <ValidationError
-        className="form-error"
-        prefix="E-mail"
-        field="email"
-        errors={state.errors}
-      />
-    </label>
-  );
-
-  const messageField = (
-    <label>
-      Besked
-      <textarea
-        name="message"
-        rows={messageRows}
-        required
-        disabled={state.submitting}
-        placeholder="Skriv din besked her."
-      />
-      <ValidationError
-        className="form-error"
-        prefix="Besked"
-        field="message"
-        errors={state.errors}
-      />
-    </label>
-  );
-
   return (
-    <form
-      className={className}
-      onSubmit={handleSubmit}
-      aria-busy={state.submitting}
-    >
-      {variant === "hero" ? (
-        <div className="contact-form-split">{nameField}{emailField}</div>
-      ) : (
-        <>
-          {nameField}
-          {emailField}
-        </>
-      )}
-      {messageField}
-      <ValidationError
-        className="form-error form-error-global"
-        errors={state.errors}
-      />
+    <form className="contact-form" onSubmit={handleSubmit} aria-busy={state.submitting}>
+      <div className="contact-form-row">
+        <label className="contact-field">
+          <span className="contact-field-label">Dit navn</span>
+          <input
+            name="name"
+            type="text"
+            required
+            autoComplete="name"
+            disabled={state.submitting}
+          />
+          <ValidationError
+            className="form-error"
+            prefix="Dit navn"
+            field="name"
+            errors={state.errors}
+          />
+        </label>
+
+        <label className="contact-field">
+          <span className="contact-field-label">Din e-mail</span>
+          <input
+            type="email"
+            name="email"
+            required
+            autoComplete="email"
+            disabled={state.submitting}
+          />
+          <ValidationError
+            className="form-error"
+            prefix="Din e-mail"
+            field="email"
+            errors={state.errors}
+          />
+        </label>
+      </div>
+
+      <label className="contact-field">
+        <span className="contact-field-label">Din besked</span>
+        <textarea
+          name="message"
+          rows={5}
+          required
+          disabled={state.submitting}
+          placeholder="Fx en idé, et tidspunkt eller bare et hej - skriv løst."
+        />
+        <ValidationError
+          className="form-error"
+          prefix="Din besked"
+          field="message"
+          errors={state.errors}
+        />
+      </label>
+
+      <ValidationError className="form-error form-error-global" errors={state.errors} />
+
       <button
         type="submit"
-        className="btn btn-primary contact-form-submit"
+        className="contact-form-submit"
         disabled={state.submitting}
       >
         {state.submitting ? "Sender..." : "Send besked"}

@@ -3,12 +3,17 @@ export function Footer() {
   return (
     <footer className="site-footer">
       <div className="container footer-inner">
-        <p className="footer-eyebrow">Kunst · Forløb · Aarhus</p>
-        <p className="footer-name">Steffen Mark Hansen</p>
-        <p className="footer-meta">
-          {year} · Aarhus
+        <p className="wordmark-xl">Steffen Mark Hansen</p>
+        <p className="footer-tag">
+          Maleri, tekst og fællesskab i Aarhus - med plads til leg og tryghed.
         </p>
         <nav className="footer-links" aria-label="Footer">
+          <a
+            href="mailto:kontakt@example.com?subject=Foresp%C3%B8rgsel%20-%20Steffen%20Mark%20Hansen"
+            className="footer-link"
+          >
+            E-mail
+          </a>
           <a
             href="https://www.instagram.com/stef_e_li/"
             target="_blank"
@@ -17,10 +22,11 @@ export function Footer() {
           >
             Instagram
           </a>
-          <a href="#contact" className="footer-link">
+          <a href="#kontakt" className="footer-link">
             Kontakt
           </a>
         </nav>
+        <p className="footer-meta">{year} · Aarhus</p>
       </div>
     </footer>
   );

@@ -1,0 +1,702 @@
+{
+  "process-courtyard-spray.jpg": {
+    "variants": [
+      {
+        "path": "images/r/process-courtyard-spray-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/process-courtyard-spray-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/process-courtyard-spray-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/process-courtyard-spray-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/process-courtyard-spray-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/process-courtyard-spray-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "process-hand-canvas.jpg": {
+    "variants": [
+      {
+        "path": "images/r/process-hand-canvas-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/process-hand-canvas-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/process-hand-canvas-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/process-hand-canvas-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/process-hand-canvas-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/process-hand-canvas-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "process-outdoor-table.jpg": {
+    "variants": [
+      {
+        "path": "images/r/process-outdoor-table-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/process-outdoor-table-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/process-outdoor-table-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/process-outdoor-table-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/process-outdoor-table-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/process-outdoor-table-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "process-pink-canvas.jpg": {
+    "variants": [
+      {
+        "path": "images/r/process-pink-canvas-i480.webp",
+        "w": 270
+      },
+      {
+        "path": "images/r/process-pink-canvas-i640.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/process-pink-canvas-i800.webp",
+        "w": 450
+      },
+      {
+        "path": "images/r/process-pink-canvas-i1024.webp",
+        "w": 576
+      },
+      {
+        "path": "images/r/process-pink-canvas-i1280.webp",
+        "w": 720
+      },
+      {
+        "path": "images/r/process-pink-canvas-i1600.webp",
+        "w": 900
+      }
+    ]
+  },
+  "steffen-gallery-01.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-01-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-01-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-01-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-01-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-01-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-01-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-02.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-02-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-02-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-02-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-02-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-02-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-02-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-03.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-03-i480.webp",
+        "w": 222
+      },
+      {
+        "path": "images/r/steffen-gallery-03-i640.webp",
+        "w": 296
+      },
+      {
+        "path": "images/r/steffen-gallery-03-i800.webp",
+        "w": 370
+      },
+      {
+        "path": "images/r/steffen-gallery-03-i1024.webp",
+        "w": 473
+      },
+      {
+        "path": "images/r/steffen-gallery-03-i1280.webp",
+        "w": 592
+      },
+      {
+        "path": "images/r/steffen-gallery-03-i1600.webp",
+        "w": 739
+      }
+    ]
+  },
+  "steffen-gallery-04.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-04-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-04-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-04-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-04-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-04-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-04-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-05.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-05-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-05-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-05-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-05-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-05-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-05-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-06.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-06-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-06-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-06-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-06-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-06-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-06-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-07.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-07-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-07-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-07-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-07-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-07-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-07-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-08.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-08-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-08-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-08-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-08-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-08-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-08-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-09.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-09-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-09-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-09-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-09-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-09-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-09-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-10.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-10-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-10-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-10-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-10-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-10-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-10-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-11.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-11-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-11-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-11-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-11-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-11-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-11-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-12.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-12-i480.webp",
+        "w": 222
+      },
+      {
+        "path": "images/r/steffen-gallery-12-i640.webp",
+        "w": 296
+      },
+      {
+        "path": "images/r/steffen-gallery-12-i800.webp",
+        "w": 370
+      },
+      {
+        "path": "images/r/steffen-gallery-12-i1024.webp",
+        "w": 473
+      },
+      {
+        "path": "images/r/steffen-gallery-12-i1280.webp",
+        "w": 592
+      },
+      {
+        "path": "images/r/steffen-gallery-12-i1600.webp",
+        "w": 739
+      }
+    ]
+  },
+  "steffen-gallery-13.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-13-i480.webp",
+        "w": 222
+      },
+      {
+        "path": "images/r/steffen-gallery-13-i640.webp",
+        "w": 296
+      },
+      {
+        "path": "images/r/steffen-gallery-13-i800.webp",
+        "w": 370
+      },
+      {
+        "path": "images/r/steffen-gallery-13-i1024.webp",
+        "w": 473
+      },
+      {
+        "path": "images/r/steffen-gallery-13-i1280.webp",
+        "w": 592
+      },
+      {
+        "path": "images/r/steffen-gallery-13-i1600.webp",
+        "w": 739
+      }
+    ]
+  },
+  "steffen-gallery-14.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-14-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-14-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-14-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-14-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-14-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-14-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-15.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-15-i480.webp",
+        "w": 222
+      },
+      {
+        "path": "images/r/steffen-gallery-15-i640.webp",
+        "w": 296
+      },
+      {
+        "path": "images/r/steffen-gallery-15-i800.webp",
+        "w": 370
+      },
+      {
+        "path": "images/r/steffen-gallery-15-i1024.webp",
+        "w": 473
+      },
+      {
+        "path": "images/r/steffen-gallery-15-i1280.webp",
+        "w": 592
+      },
+      {
+        "path": "images/r/steffen-gallery-15-i1600.webp",
+        "w": 739
+      }
+    ]
+  },
+  "steffen-gallery-16.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-16-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-16-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-16-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-16-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-16-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-16-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-gallery-17.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-gallery-17-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-gallery-17-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-gallery-17-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-gallery-17-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-gallery-17-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-gallery-17-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-portrait-suit.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-portrait-suit-i480.webp",
+        "w": 320
+      },
+      {
+        "path": "images/r/steffen-portrait-suit-i640.webp",
+        "w": 426
+      },
+      {
+        "path": "images/r/steffen-portrait-suit-i800.webp",
+        "w": 533
+      },
+      {
+        "path": "images/r/steffen-portrait-suit-i1024.webp",
+        "w": 683
+      },
+      {
+        "path": "images/r/steffen-portrait-suit-i1280.webp",
+        "w": 853
+      },
+      {
+        "path": "images/r/steffen-portrait-suit-i1600.webp",
+        "w": 1066
+      }
+    ]
+  },
+  "steffen-street.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-street-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-street-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-street-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-street-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-street-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-street-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-studio-rope-art.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-studio-rope-art-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-studio-rope-art-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-studio-rope-art-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-studio-rope-art-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-studio-rope-art-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-studio-rope-art-i1600.webp",
+        "w": 1200
+      }
+    ]
+  },
+  "steffen-studio.jpg": {
+    "variants": [
+      {
+        "path": "images/r/steffen-studio-i480.webp",
+        "w": 360
+      },
+      {
+        "path": "images/r/steffen-studio-i640.webp",
+        "w": 480
+      },
+      {
+        "path": "images/r/steffen-studio-i800.webp",
+        "w": 600
+      },
+      {
+        "path": "images/r/steffen-studio-i1024.webp",
+        "w": 768
+      },
+      {
+        "path": "images/r/steffen-studio-i1280.webp",
+        "w": 960
+      },
+      {
+        "path": "images/r/steffen-studio-i1600.webp",
+        "w": 1200
+      }
+    ]
+  }
+}

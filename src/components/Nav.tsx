@@ -1,10 +1,7 @@
 const navItems = [
-  { href: "#about", label: "Om" },
-  { href: "#art", label: "Kunst" },
-  { href: "#process", label: "Proces" },
-  { href: "#poems", label: "Digte" },
-  { href: "#stemning", label: "Stemning" },
-  { href: "#contact", label: "Kontakt" }
+  { href: "#kunst", label: "Kunst" },
+  { href: "#digte", label: "Digte" },
+  { href: "#kontakt", label: "Kontakt" }
 ];
 
 export function Nav() {
@@ -14,7 +11,7 @@ export function Nav() {
         <a href="#top" className="wordmark">
           Steffen Mark Hansen
         </a>
-        <nav>
+        <nav aria-label="Primær">
           <ul className="nav-list">
             {navItems.map((item) => (
               <li key={item.href}>
