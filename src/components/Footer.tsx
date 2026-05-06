@@ -10,7 +10,7 @@ export function Footer() {
         </p>
         <nav className="footer-links" aria-label="Footer">
           <a
-            href="https://www.instagram.com/"
+            href="https://www.instagram.com/stef_e_li/"
             target="_blank"
             rel="noopener noreferrer"
             className="footer-link"
