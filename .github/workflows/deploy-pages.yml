@@ -27,10 +27,11 @@ jobs:
 
       - run: npm ci
 
-      # `vite.config.js` sets `base` from `GITHUB_REPOSITORY` (always present in Actions) so asset URLs match /<repo>/ on Pages.
+      # Custom domain serves the site at /, so force Vite's base to root in production.
       # Optional: repo secret GA_MEASUREMENT_ID (e.g. G-XXXXXXXXXX) for Google Analytics in production.
       - run: npm run build
         env:
+          VITE_BASE_PATH: /
           VITE_GA_MEASUREMENT_ID: ${{ secrets.GA_MEASUREMENT_ID }}
 
       - uses: actions/upload-pages-artifact@v3

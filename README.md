@@ -37,7 +37,7 @@ Production build runs `scripts/optimize-images.mjs` first: it writes responsive 
 
 ## Contact form integration
 
-Formspree via `@formspree/react` in `src/components/ContactForm.tsx`, rendered from `src/components/KontaktSection.tsx` (form id `xjglrkoo`).
+Formspree via `@formspree/react` in `src/components/ContactForm.tsx`, rendered from `src/components/KontaktSection.tsx` (form id `xzdooabd`).
 
 ## Analytics
 

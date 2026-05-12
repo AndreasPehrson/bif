@@ -592,13 +592,13 @@ a {
   background: none;
   font-family: var(--font-display);
   font-style: italic;
-  font-size: clamp(1.35rem, 3.2vw, 2.05rem);
+  font-size: clamp(1.05rem, 2.45vw, 1.55rem);
   font-weight: 450;
-  line-height: 1.5;
+  line-height: 1.55;
   text-align: center;
   text-wrap: balance;
   color: var(--color-ink);
-  max-width: 32ch;
+  max-width: 42ch;
 }
 
 .pullquote p {

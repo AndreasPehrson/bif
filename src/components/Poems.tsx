@@ -17,13 +17,23 @@ export function Poems() {
         </header>
         <div className="poems-stack">
           <blockquote className="pullquote">
-            <p>&ldquo;Vi bar farverne ind i rummet, og rummet svarede igen.&rdquo;</p>
+            <p>
+              &ldquo;Havde det da bare været på grund af løgne. Det havde været meget bedre
+              end, at vores selvværd ikke tillod os at se hinanden nøgne.&rdquo;
+            </p>
           </blockquote>
           <blockquote className="pullquote">
-            <p>&ldquo;Når stemmen tør stå stille, begynder linjen at bevæge sig.&rdquo;</p>
+            <p>
+              &ldquo;Ved det ene bord er der bølgeskvulp i glassene med det lokale
+              bryg. Både humøret og øllet er TOP.&rdquo;
+            </p>
           </blockquote>
           <blockquote className="pullquote">
-            <p>&ldquo;Ordene blev til spor - ikke for at forklare, men for at blive set.&rdquo;</p>
+            <p>
+              &ldquo;De har nok hele tiden vidst, at flugten fra mord til nord, fra syd
+              til fryd, fra rig høst til øst, kilometervis på hest - aldrig ville give
+              dem en redningsvest.&rdquo;
+            </p>
           </blockquote>
         </div>
       </div>
