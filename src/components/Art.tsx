@@ -40,15 +40,9 @@ const extraArtWorks: GalleryItem[] = [
     meta: "2024 · Foto · atelier"
   },
   {
-    src: assetUrl("/images/steffen-gallery-02.jpg"),
-    alt: "Så længe jeg går så meget op i hvad andre tænker, slipper jeg aldrig fri af mine lænker",
-    title: "To figurer i gårdrummet",
-    meta: "2025 · Maleri · figurmotiv"
-  },
-  {
     src: assetUrl("/images/steffen-gallery-03.jpg"),
     alt: "Pink lærred med to små figurmotiver foran murstensvæg",
-    title: "Nedtrykt menneske med tung rygsæk og selvlysende hoveder",
+    title: "Nedtrykte mennesker med tung rygsæk og selvlysende hoveder",
     meta: "2025 · Maleri · akryl og spray · solgt"
   },
   {
@@ -164,7 +158,7 @@ const allGalleryForLightbox: GalleryItem[] = [
 export const artLightboxImages: LightboxImage[] = allGalleryForLightbox.map((item) => ({
   src: item.src,
   alt: item.alt,
-  caption: `${item.title} · ${item.meta}`
+  caption: `${item.meta}`
 }));
 
 type ArtProps = {
@@ -174,7 +168,6 @@ type ArtProps = {
 function Caption({ title, meta }: { title: string; meta: string }) {
   return (
     <div className="caption">
-      <span className="caption-line caption-line--title">{title}</span>
       <span className="caption-line">{meta}</span>
     </div>
   );
