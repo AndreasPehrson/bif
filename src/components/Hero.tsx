@@ -32,9 +32,12 @@ export function Hero() {
               Jeg arbejder med maleri, tekst og fællesskab - i rum, hvor tryghed og leg må få
               plads i den kreative proces.
             </p>
+            <p className="lead-editorial">
+              Jeg tilbyder også kreative workshops til skoler, institutioner og andre som søger sparring i den kreative verden. 
+            </p>
             <p className="hero-cta">
               <a href="#kontakt" className="link-quiet hero-cta-link">
-                Skriv til mig<span className="visually-hidden"> (spring til kontakt)</span>
+                Kontakt mig<span className="visually-hidden"> (spring til kontakt)</span>
               </a>
             </p>
           </div>
