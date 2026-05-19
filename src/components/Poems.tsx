@@ -11,8 +11,7 @@ export function Poems() {
             Digte
           </h2>
           <p className="section-intro poems-intro">
-            Korte uddrag fra skitsebog og scene - linjer der må stå stille og alligevel bevæge
-            sig.
+            Korte uddrag fra digte. 
           </p>
         </header>
         <div className="poems-stack">
